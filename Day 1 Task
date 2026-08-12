@@ -1,0 +1,134 @@
+1.Shopping Bill
+Create a program for a supermarket.
+Input:
+Customer name → str
+Product price → float
+Quantity → int
+Member status → bool
+
+Calculate:
+
+Total price
+Discount
+Final bill amount
+
+Use arithmetic, comparison, logical, and assignment operators.
+
+2. ATM Withdrawal
+Create an ATM withdrawal program.
+
+Input:
+
+Account balance → float
+Withdrawal amount → float
+PIN → int
+Account active → bool
+
+Check:
+
+PIN is correct
+Account is active
+Withdrawal amount is less than/equal to balance
+
+Use comparison + logical + arithmetic + assignment operators.
+
+3. Student Result System
+Create a student result program.
+
+Input:
+
+Student name → str
+5 subject marks → int
+Attendance → float
+
+Calculate:
+
+Total
+Average
+Percentage
+
+Check whether the student is eligible for the exam using comparison + logical operators.
+
+4. Cab Fare Calculator
+Create a cab fare calculator.
+
+Input:
+
+Customer name → str
+Distance → float
+Number of passengers → int
+Is peak hour → bool
+
+Calculate:
+
+Fare = distance × rate
+
+If it is peak hour, add a surcharge.
+
+Use arithmetic, assignment, comparison and logical operators.
+
+5.  Online Shopping Discount
+Create an online shopping bill.
+
+Input:
+
+Customer name
+Product price
+Quantity
+Coupon available → bool
+
+Rules:
+
+Amount ≥ ₹5,000 → 20% discount
+Amount ≥ ₹2,000 → 10% discount
+Coupon + amount ≥ ₹3,000 → additional discount
+
+Calculate the final amount.
+
+6. Employee Salary Calculator
+Input:
+
+Employee name → str
+Basic salary → float
+Experience → int
+Performance rating → float
+
+Calculate:
+
+Basic Salary
++ HRA
++ Bonus
+= Gross Salary
+
+Give bonus only if experience and performance satisfy the required conditions.
+
+7. Hotel Billing System
+
+Create a hotel billing program.
+
+Input:
+
+Customer Name
+Room Price
+Number of Days
+Food Bill
+AC Room (True/False)
+
+Calculate:
+
+Room Cost = Room Price × Number of Days
+Total Bill = Room Cost + Food Bill
+
+Rules:
+
+Stay ≥ 5 days → 10% discount
+AC room → add ₹500 per day
+Total bill ≥ ₹10,000 → additional 5% discount
+
+Display:
+
+Customer Name
+Room Cost
+Food Bill
+Discount
+Final Bill
