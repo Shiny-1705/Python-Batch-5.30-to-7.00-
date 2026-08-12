@@ -1,0 +1,35 @@
+1.Take two numbers from the user and perform:
+i)Addition
+ii)Subtraction
+iii)Multiplication
+iv)Division
+v)Modulus (remainder)
+vi)Floor Division
+vii)Exponentiation
+
+2.Write a program to calculate the area and perimeter of a rectangle,square and circle.
+
+3.Find the average of three numbers entered by the user.
+
+4.Write a program to check:
+i)If two numbers are equal
+ii)If one number is greater than the other
+iii)If a number is less than or equal to another
+
+5.Find the square root of the number.
+
+6.Find the Simple interest and compound interest of a number.
+
+7.Start with x = 10 and apply the following operations:
+x += 5
+x -= 3
+x *= 2
+x /= 4
+x %= 2
+x **= 3
+
+8.Swapping of 2 numbers using arithmetic operators 
+
+9.Input a username and password and check if both are correct using and / or.
+
+10.Find the cube root of the number.
