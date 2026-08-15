@@ -1,0 +1,27 @@
+🔷 if-else Questions
+1.Write a program to check whether a number is even or odd.
+2.Write a program to check whether a person is eligible to vote (age ≥ 18).
+3.Write a program to check whether a student passes or fails (marks ≥ 40).
+4.Write a program to check whether a number is positive or negative.
+🔷 elif Questions
+5.Write a program to assign grades based on marks:
+90+ → A
+75–89 → B
+50–74 → C
+Below 50 → Fail
+6.Write a program to find the largest among three numbers.
+7.Write a program that takes a number (1–7) and prints the corresponding day of the week.
+8.Write a program to perform a simple calculator operation (+, -, *, /) based on user choice.
+🔷 Nested if-else Questions 🔥
+9.Write a program to validate login:
+If username is correct
+Then check password
+If correct → Login success
+Else → Wrong password
+Else → Invalid username
+10.Traffic Signal System
+Write a program to print action based on signal:
+Red → Stop
+Yellow → Get Ready
+Green → Go
+👉 If invalid signal → print error
