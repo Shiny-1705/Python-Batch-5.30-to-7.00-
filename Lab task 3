@@ -1,0 +1,16 @@
+Forr loop
+
+Print numbers from 1 to 10
+for i in range(1, 11):
+    print(i)
+Print numbers from 10 to 1.
+Print all even numbers from 1 to 20.
+Print all odd numbers from 1 to 20.
+Print the multiplication table of a number.
+Example: 5 × 1 = 5 ... 5 × 10 = 50
+Find the sum of numbers from 1 to 100.
+Find the sum of even numbers from 1 to 50.
+Print each character of a string.
+Input: "PYTHON"
+Count the number of characters in a string without using len().
+Print the squares of numbers from 1 to 10.
