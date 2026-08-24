@@ -1,0 +1,390 @@
+## 1. ATM Withdrawal
+
+**Question:**
+You are developing an ATM. The user enters an amount. If the amount is less than or equal to the available balance, allow the withdrawal; otherwise, display `"Insufficient Balance"`.
+Answer:
+balance = 5000
+amount = 3000
+if amount <= balance:
+    print("Withdrawal successful")
+else:
+    print("Insufficient Balance")
+
+---
+
+## 2. Login System
+
+**Question:**
+You are creating a login system. First check whether the username is correct. If it is correct, then check the password. Which concept would you use?
+Answer:
+username = "admin"
+password = "1234"
+if username == "admin":
+    if password == "1234":
+        print("Login successful")
+    else:
+        print("Wrong password")
+else:
+    print("Wrong username")
+
+---
+
+## 3. Online Shopping Discount
+
+**Question:**
+An online store gives a 20% discount if the purchase amount is above ₹5000. Otherwise, no discount is given. Which concept would you use?
+
+Answer:
+amount = 6000
+
+if amount > 5000:
+    print("20% discount")
+else:
+    print("No discount")
+
+---
+
+## 4. Student Result System
+
+**Question:**
+A college wants to calculate grades:
+
+* 90+ → A
+* 75–89 → B
+* 60–74 → C
+* Below 60 → Fail
+
+Which conditional structure is suitable?
+Answer:
+mark = 82
+
+if mark >= 90:
+    print("A")
+elif mark >= 75:
+    print("B")
+elif mark >= 60:
+    print("C")
+else:
+    print("Fail")
+
+---
+
+# 5. Password Attempts
+
+**Question:**
+A login system allows the user only **3 attempts** to enter the correct password. Which loop would you choose?
+
+Answer:
+correct_password = "admin123"
+
+for attempt in range(3):
+    password = input("Enter password: ")
+
+    if password == correct_password:
+        print("Login successful")
+        break
+    else:
+        print("Wrong password")
+
+# 6. ATM Menu
+
+**Question:**
+An ATM should repeatedly display:
+
+```text
+1. Balance
+2. Withdraw
+3. Deposit
+4. Exit
+
+Answer:
+while True:
+    print("1. Balance")
+    print("2. Withdraw")
+    print("3. Deposit")
+    print("4. Exit")
+
+    choice = int(input("Enter choice: "))
+
+    if choice == 4:
+        print("Thank you")
+        break
+
+---
+
+#  7. Shopping Cart
+
+**Question:**
+You have a list of products. You want to print every product except `"Out of Stock"` products.
+
+Answer:
+products = ["Laptop", "Mobile", "Out of Stock", "Mouse"]
+for product in products:
+    if product == "Out of Stock":
+        continue
+
+    print(product)
+
+Output:
+
+```text
+Laptop
+Mobile
+Mouse
+
+---
+
+# 8. Parking System
+
+**Question:**
+A parking system checks vehicles one by one. When it finds a vehicle with a particular registration number, it should stop searching.
+Answer:
+vehicles = ["TN01AB1234", "TN22CD5678", "TN30EF9999"]
+
+for vehicle in vehicles:
+    if vehicle == "TN30EF9999":
+        print("Vehicle found")
+        break
+
+---
+
+# 9. Email Validation
+
+**Question:**
+You have 10 email addresses. You want to check each email. If an email doesn't contain `"@"`, skip it and check the next email.
+
+Which statement would you use?
+Answer:
+emails = [
+    "abc@gmail.com",
+    "hello@gmail.com",
+    "invalidemail",
+    "test@yahoo.com"
+]
+
+for email in emails:
+    if "@" not in email:
+        continue
+
+    print("Valid:", email)
+
+---
+
+# 10. Number Searching
+
+**Question:**
+You are searching numbers from 1 to 100. Once you find number 75, you don't need to check the remaining numbers.
+
+What should you use?
+
+**Answer:** `break`
+
+```python
+for i in range(1, 101):
+    if i == 75:
+        print("Number found")
+        break
+```
+
+---
+
+# 11. Bank Loan Eligibility
+
+**Question:**
+A bank wants to approve a loan only if:
+
+1. Age is at least 21.
+2. If age is valid, check whether salary is at least ₹30,000.
+
+Which concept would you use?
+
+**Answer:** Nested `if`.
+
+```python
+age = 25
+salary = 40000
+
+if age >= 21:
+    if salary >= 30000:
+        print("Loan approved")
+    else:
+        print("Salary is too low")
+else:
+    print("Age requirement not met")
+```
+
+---
+
+#  12. College Admission
+
+**Question:**
+A college admission system should first check whether the student scored at least 60%. If yes, then check whether the student has the required documents.
+
+Which concept?
+
+**Answer:** Nested `if`.
+
+```python
+mark = 75
+documents = True
+
+if mark >= 60:
+    if documents:
+        print("Admission approved")
+    else:
+        print("Submit documents")
+else:
+    print("Not eligible")
+```
+
+---
+
+# 13. Employee Attendance
+
+**Question:**
+You have attendance data for 10 employees. You want to print only employees who are present.
+
+Which loop and condition would you use?
+
+**Answer:** `for` + `if`.
+
+```python
+attendance = ["Present", "Absent", "Present", "Present", "Absent"]
+
+for status in attendance:
+    if status == "Present":
+        print("Employee is present")
+```
+
+---
+
+# 14. Security Monitoring
+
+**Question:**
+A security program continuously monitors login attempts. If a suspicious login is detected, it should immediately stop monitoring.
+
+Which statements would you use?
+
+**Answer:** `while` + `if` + `break`.
+
+```python
+while True:
+    login = input("Enter login status: ")
+
+    if login == "suspicious":
+        print("Alert!")
+        break
+
+    print("Monitoring...")
+```
+
+---
+
+# 15. Testing Multiple Inputs
+
+**Question:**
+You are testing 10 user inputs. If one input is invalid, you want to skip it and continue testing the remaining inputs.
+
+Which statement?
+
+**Answer:** `continue`.
+
+```python
+inputs = [10, 20, -5, 30, 40]
+
+for value in inputs:
+    if value < 0:
+        continue
+
+    print("Testing:", value)
+
+---
+
+# 16. Incomplete Function
+
+**Question:**
+You are designing a Python application. You know that a function called `payment()` will be implemented later, but currently you don't want it to execute anything.
+
+What should you use?
+
+Answer:
+def payment():
+    pass
+```
+
+`pass` acts as a **placeholder**.
+
+---
+
+# 17. Interview Scenario – Break or Continue?
+
+**Question:**
+You are processing 1,000 customer records.
+
+If you find a customer with ID `500`, you want to **stop processing completely**.
+
+What will you use?
+
+**Answer:** `break`.
+
+---
+
+**Question:**
+If a customer record is invalid but you want to process the remaining 999 records, what will you use?
+
+Answer:
+Invalid record → continue → Skip this record
+Target found    → break    → Stop processing
+```
+
+---
+
+# 18. Interview Scenario – For or While?
+
+**Question:**
+You need to process exactly 100 student records. Which loop would you choose?
+
+Answer:
+for i in range(100):
+    print("Processing student")
+```
+**Question:**
+You are creating a login system where the user can keep trying until they enter the correct password. Which loop is more suitable?
+
+Answer:
+password = ""
+
+while password != "admin123":
+    password = input("Enter password: ")
+
+print("Login successful")
+
+---
+
+# 19. Tricky Real-Time Scenario
+
+**Question:**
+You are developing a food-ordering application.
+
+The program should:
+
+1. Display the menu repeatedly.
+2. Allow the customer to order items.
+3. If the customer enters an unavailable item, skip it.
+4. If the customer chooses `"exit"`, stop the program.
+
+Which concepts will you use?
+
+**Answer:**
+while True:
+    item = input("Enter item: ")
+
+    if item == "exit":
+        break
+
+    if item == "unavailable":
+        continue
+
+    print("Order placed:", item)
+```
+
