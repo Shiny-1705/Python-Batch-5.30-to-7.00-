@@ -1,0 +1,62 @@
+Python String
+
+1. Write a Python program to take your name as input and print it.
+
+
+2. Write a program to find the length of a string.
+
+
+3. Write a program to convert a string into uppercase.
+
+
+4. Write a program to convert a string into lowercase.
+
+
+5. Write a program to print the first and last character of a string.
+
+
+6. Write a program to check whether a string starts with "A" using startswith().
+
+
+7. Write a program to check whether a string ends with "ing" using endswith().
+
+
+8. Write a program to check whether the given string contains only numbers using isdigit().
+
+
+9. Write a program to check whether the given string contains only alphabets using isalpha().
+
+
+10. Write a program to count a particular character in a string using count().
+
+
+11. Write a program to find the position of a character using find().
+
+
+12. Write a program to replace a word in a string using replace().
+
+
+13. Write a program to remove extra spaces from a string using strip().
+
+
+14. Write a program to split a sentence into words using split().
+
+
+15. Write a program to reverse a string using slicing.
+
+
+16. Write a program to print the first 3 characters using slicing.
+
+
+17. Write a program to print the last 3 characters using slicing.
+
+
+18. Write a program to print characters from index 2 to 5 using slicing.
+
+
+19. Write a program to print alternate characters using slicing.
+
+
+20. Write a program using format() to display a person's name, age, and city in a sentence.
+
+
