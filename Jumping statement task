@@ -1,0 +1,58 @@
+Python Tasks – for Loop with break, continue, pass
+
+🔴 Break
+
+1. Using a for loop, print numbers from 1 to 10 and stop when the number is 5.
+
+
+2. Using a for loop, print numbers from 1 to 20 and stop when the number is 10.
+
+
+3. Using a for loop, print the numbers 1 to 10 and stop when the number is divisible by 4.
+
+
+4. Using a for loop, search for the number 7 in a list and stop when it is found.
+
+
+
+🟢 Continue
+
+5. Using a for loop, print numbers from 1 to 10, skipping 5.
+
+
+6. Using a for loop, print numbers from 1 to 20, skipping even numbers.
+
+
+7. Using a for loop, print numbers from 1 to 15, skipping numbers divisible by 3.
+
+
+8. Using a for loop, print all characters in "PYTHON" except "O".
+
+
+
+🟡 Pass
+
+9. Using a for loop, print numbers from 1 to 10 and use pass when the number is 5.
+
+
+10. Using a for loop, print the names in a list and use pass when the name is "Ravi".
+
+
+11. Using a for loop, check numbers from 1 to 10 and use pass for even numbers.
+
+
+12. Write a for loop from 1 to 5 and use pass inside the loop.
+
+
+
+⭐ Mixed Practice
+
+13. Print numbers from 1 to 20 using a for loop. Skip even numbers and stop at 15.
+
+
+14. Print numbers from 1 to 10. Use pass for 5 and continue for 7.
+
+
+15. Print numbers from 1 to 20. Skip multiples of 3 and stop when the number reaches 18.
+
+
