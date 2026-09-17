@@ -1,0 +1,86 @@
+User-Defined Functions
+
+1. Create a function to print Hello World.
+
+
+2. Create a function to print your name.
+
+
+3. Create a function to add two numbers.
+
+
+4. Create a function to subtract two numbers.
+
+
+5. Create a function to find the square of a number.
+
+
+6. Create a function to check even or odd.
+
+
+7. Create a function to find the largest of two numbers.
+
+
+8. Create a function to calculate the area of a rectangle.
+
+
+9. Create a function to calculate the factorial of a number.
+
+
+10. Create a function to check whether a number is positive, negative, or zero.
+
+
+
+🔄 Recursive Functions
+
+11. Write a recursive function to print 1 to 5.
+
+
+12. Write a recursive function to print 5 to 1.
+
+
+13. Find the factorial using recursion.
+
+
+14. Find the sum of 1 to n using recursion.
+
+
+15. Find the square of a number using a function.
+
+
+
+⚡ Lambda Functions
+
+16. Create a lambda function to find the square.
+
+
+17. Create a lambda function to find the cube.
+
+
+18. Create a lambda function to add two numbers.
+
+
+19. Create a lambda function to check even or odd.
+
+
+20. Create a lambda function to find the largest of two numbers.
+
+
+
+🔧 Built-in Functions
+
+21. Use len() to find the length of a string.
+
+
+22. Use max() to find the largest number in a list.
+
+
+23. Use min() to find the smallest number in a list.
+
+
+24. Use sum() to find the total of numbers in a list.
+
+
+25. Use type() to find the data type of a variable.
+
+
