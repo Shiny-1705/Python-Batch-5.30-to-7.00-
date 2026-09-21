@@ -1,0 +1,94 @@
+🟢 Easy
+
+map()
+
+1. Double every number in a list.
+
+
+2. Find the square of every number.
+
+
+3. Add 5 to every number.
+
+
+4. Multiply every number by 10.
+
+
+5. Convert all names to uppercase.
+
+
+
+filter()
+
+6. Get all even numbers.
+
+
+7. Get all odd numbers.
+
+
+8. Get numbers greater than 10.
+
+
+9. Get numbers less than 50.
+
+
+10. Get numbers divisible by 5.
+
+
+
+
+---
+
+🟡 Moderate
+
+map()
+
+11. Find the cube of every number.
+
+
+12. Find the length of every word in a list.
+
+
+13. Convert temperatures from Celsius to Fahrenheit.
+
+
+14. Add 10% to every price in a list.
+
+
+15. Convert a list of names into their first-letter uppercase format.
+
+
+
+filter()
+
+16. Get numbers between 10 and 50.
+
+
+17. Get numbers divisible by both 2 and 3.
+
+
+18. Get names starting with "A".
+
+
+19. Get words having more than 5 characters.
+
+
+20. Get positive numbers from a list.
+
+
+
+🔥 Combined Moderate
+
+21. Filter even numbers and find their squares.
+
+
+22. Filter numbers greater than 10 and double them.
+
+
+23. Filter names starting with "A" and convert them to uppercase.
+
+
+24. Filter odd numbers and find their cubes.
+
+
+25. Filter words with more than 4 characters and find their lengths.
