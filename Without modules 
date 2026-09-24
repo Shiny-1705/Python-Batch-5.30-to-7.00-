@@ -1,0 +1,35 @@
+def encrypt(message, key):
+    result = ""
+
+    for ch in message:
+        result += chr(ord(ch) + key)
+
+    return result
+
+
+def decrypt(message, key):
+    result = ""
+
+    for ch in message:
+        result += chr(ord(ch) - key)
+
+    return result
+
+
+print("===== SECRET MESSAGE =====")
+print("1. Encrypt")
+print("2. Decrypt")
+
+choice = input("Enter your choice: ")
+
+message = input("Enter message: ")
+key = int(input("Enter key: "))
+
+if choice == "1":
+    print("Encrypted message:", encrypt(message, key))
+
+elif choice == "2":
+    print("Decrypted message:", decrypt(message, key))
+
+else:
+    print("Invalid choice")
