@@ -1,0 +1,103 @@
+#exceptional handling
+# try:
+#     a=int(input("Enter the number:"))
+#     print("Number:",a)
+# except:
+#     print("Not a number")
+
+#Zerodivisionerror
+# try:
+#     x=10/0
+#     print("Divisible")
+# except ZeroDivisionError:
+#     print("Not a number")
+
+#try,except and else
+# try:
+#     a=int(input("Enter a:"))
+#     b=int(input("enter b:"))
+#     x = a/b
+# except ZeroDivisionError:
+#     print("Not a number")
+# except ValueError:
+#     print("Value error")
+# else:
+#     print("Okkk")
+
+#typeerror
+# try:
+#     a="Hii"+5
+# except TypeError:
+#     print("Cant try this!!")
+
+#raise
+# age=int(input("Enter age:"))
+# if age<18:
+#     raise ValueError("Cant register")
+# else:
+#     print("Registered")
+
+#index error
+# try:
+#     a=[1,2,3,4,5]
+#     print(a[10])
+# except IndexError:
+#     print("No index position")
+# #Keyerror
+# try:
+#     a={"Name":"Joy","Course":"Python"}
+#     print(a["Age"])
+# except KeyError:
+#     print("Not found")
+
+#File Handling
+#Create and write file
+# f=open("Python.txt","w")
+# f.write("Hii this is Python")
+# f.close()
+# print("Successful")
+#
+# #Read the file
+# f=open("Python.txt","r")
+# a=f.read()
+# print(a)
+# f.close()
+#
+# #Append + read
+# f=open("Python.txt","a")
+# f.write("\nJoy didnt attend the class")
+# f.close()
+# print("Successful")
+# f=open("Python.txt","r")
+# a=f.read()
+# print(a)
+# f.close()
+
+#line by line(for loop)
+# f=open("Student.txt","r")
+# for line in f:
+#     print(line.strip())
+# f.close()
+
+#with loop
+with open("Student.txt","w")as f:
+    f.write("Hello")
+with open("Student.txt","r")as f:
+    print(f.read())
+#
+# #Count the letter in the file
+# with open("Student.txt","r")as f:
+#     a=f.read()
+#     b=a.strip()
+# print("Total:",len(a))
+
+#file handling + exceptional handling
+# try:
+#     with open("Stunt.txt", "r") as f:
+#         print(f.read())
+# except FileNotFoundError:
+#     print("File not found")
+
+# import os
+# os.remove("Student.txt")
+# print("Removed")
