@@ -1,0 +1,23 @@
+import tkinter as tk
+from tkinter import messagebox
+
+from pymsgbox import password
+
+root=tk.Tk()
+root.title("Login form")
+root.geometry("400x300")
+root.configure(bg="lightblue")
+tk.Label(root,text="Login Form",font=("Arial",18),bg="lightblue").pack()
+tk.Label(root,text="Username",bg="lightblue").pack()
+username=tk.Entry(root)
+username.pack()
+tk.Label(root,text="Password",bg="lightblue").pack()
+username=tk.Entry(root,show='*')
+username.pack()
+def login():
+    if username=="hello" and password=="1234":
+        messagebox.showinfo("Success")
+    else:
+        messagebox.showinfo("Try again")
+tk.Button(root,text="Login",command=login).pack(pady=20)
+root.mainloop()
