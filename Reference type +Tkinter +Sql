@@ -1,0 +1,201 @@
+# #iterator
+# number=[10,20,30]
+# it=iter(number)
+# print(next(it))
+# print(next(it))
+# print(next(it))
+# print(next(it))
+
+# #for loop iterator
+# nums = [10, 20, 30, 40]
+# it = iter(nums)
+# for n in it:
+#     print(n)
+# # #while + Exceptional handling
+# text = "Python"
+# it = iter(text)
+# while True:
+#     try:
+#         letter = next(it)
+#         print(letter)
+#     except StopIteration:
+#         break
+
+#Generator
+# def genrator():
+#     yield 10
+#     yield 20
+#     yield 30
+# g=genrator()
+# print(next(g))
+# print(next(g))
+# print(next(g))
+# print(next(g))
+
+#for loop
+# def even():
+#     for i in range(2,11,2):
+#         yield i
+# for a in even():
+#     print(a)
+
+#String
+# def genrator():
+#     yield "Sanjay"
+#     yield "Sharvesh"
+#     yield "Samuvel"
+#     yield "Kishore"
+# for i in genrator():
+#     print(i)
+
+#Closure
+#Without argument
+# def outer():
+#     message="Hello"
+#     def inner():
+#         print(message)
+#     return inner()
+# ok=outer()
+# ok
+#
+# # #Parameter value
+# def outer(x):
+#     def inner(y):
+#         print(x+y)
+#     return inner
+# add=outer(10)  #x
+# add(5)  #y=10+5
+# add(20)  #y=10+20
+
+# #Decorator
+# def greet():
+#     print("Hello")
+# def display(fun):
+#     fun()
+# display(greet)
+#
+# #With decorator
+# def decorator(fun):
+#     def wrapper():
+#         print("Before function")
+#         fun()
+#         print("After function")
+#         fun()
+#     return wrapper
+# @decorator
+# def hii():
+#     print("Joy")
+# hii()
+#
+# def joy():
+#     '''He is a good boy'''
+# print(joy.__doc__)
+
+#Tkinter
+# import tkinter as tk
+# root=tk.Tk()
+# root.title("Audio Box")
+# root.geometry('400x300')
+# label=tk.Label(root,text="Hello")
+# label.pack(pady=80) #pady-->Y axis,padx-->x axis
+# root.mainloop()
+
+#Button
+# import tkinter as tk
+# def greet():
+#     label.config(text="Welcome to Python!!")
+# root=tk.Tk()
+# root.title("Python World!!")
+# root.geometry("600x600")
+# label=tk.Label(root,text="Click the button")
+# label.pack(pady=50)
+# button=tk.Button(root,text="Click me",command=greet)
+# button.pack()
+# root.mainloop()
+
+------------------------------------------
+SQL
+--------------------------
+create database livewire;
+use livewire;
+create table devi(
+id int primary key,
+student varchar(20),
+course varchar(20),
+area varchar(20));
+
+insert into devi values
+(1,"Sharvesh","Python","Attur"),
+(2,"SAnjay","UI/UX","Chennai"),
+(3,"Kishore","Django","Namakkal"),
+(4,"Sam","WD","Omalur");
+select * from devi;
+select course,area from devi;
+select * from devi
+where course="Python" or course="Django";
+
+update devi
+set student="Brindha"
+where id=1;
+select * from devi;
+
+update devi
+set area="5 roads"
+where id=1;
+select * from devi;
+
+delete from devi
+where id=2;
+select * from devi;
+
+
+-----------------------------
+Database Connectivity
+---------------------------
+#Pycharm
+
+import mysql.connector
+# Database Connectivity
+con = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="shiny",
+    database="StudentDB"
+)
+
+if con.is_connected():
+    print("Database Connected Successfully!")
+cursor = con.cursor()
+# Insert Student
+name = input("Enter Student Name: ")
+age = int(input("Enter Age: "))
+department = input("Enter Department: ")
+email = input("Enter Email: ")
+query = """
+INSERT INTO Shiny (name, age, department, email)
+VALUES (%s, %s, %s, %s)
+"""
+values = (name, age, department, email)
+cursor.execute(query, values)
+con.commit()
+print("Student Added Successfully!")
+# Display Students
+cursor.execute("SELECT * FROM Shiny")
+records = cursor.fetchall()
+print("\nStudent Records:")
+for row in records:
+    print(row)
+cursor.close()
+con.close()
+
+#Mysql
+CREATE DATABASE StudentDB;
+USE StudentDB;
+CREATE TABLE Shiny (
+    student_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    age INT,
+    department VARCHAR(50),
+    email VARCHAR(100)
+);
+select * from Shiny;
