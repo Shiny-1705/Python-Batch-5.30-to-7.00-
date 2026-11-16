@@ -1,0 +1,130 @@
+#Network
+#get hostname
+# import socket
+# name=socket.gethostname()
+# print(name)
+
+#Domain-->Ip address find
+# import socket
+# a="mahendracollege.com"
+# name=socket.gethostbyname(a)
+# print(name)
+
+#Networking
+#Socket
+import socket
+s = socket.socket()
+print("Socket successfully created")
+port = 9999
+host = socket.gethostname()
+s.bind((host, port))
+print("Socket binded to", port)
+s.listen(3)
+print("Socket is listening...")
+while True:
+    c, addr = s.accept()
+    print("Got connection from", addr)
+    c.send(b"Thank you for connecting")
+    c.close()
+
+#Client
+# import socket
+# s = socket.socket()
+# host = socket.gethostname()
+# port = 9999
+# s.connect((host, port))
+# print(s.recv(1024).decode())
+# s.close()
+
+#Thread
+#Single thread
+#Without thread
+# import time
+# print("Hii")
+# time.sleep(5)
+# print("Joyy")
+
+#With thread
+# import threading
+# import time
+# def task1():
+#     for i in range(5):
+#         print("Task1:",i)
+#         # time.sleep(2)
+# def task2():
+#     for i in range(3):
+#         print("Task2:",i)
+#         # time.sleep(2)
+# task1()
+# task2()
+# t1=threading.Thread(target=task1())
+# t2=threading.Thread(target=task2())
+# t1.start()
+# t2.start()
+# t1.join()
+# t2.join()
+# print("Completed")
+
+#MainThreat
+# import threading
+# print(threading.current_thread().name)
+
+#Deamon thread
+# import threading
+# import time
+# def background_task():
+#     for i in range(5):
+#         print("Background task running...", i)
+#         time.sleep(1)
+# t = threading.Thread(target=background_task)
+# t.start()
+# print("Main thread finished!")
+
+#while loop
+# import threading
+# import time
+# def task1():
+#     while True:
+#         print("Task completed")
+#         time.sleep(1)
+# t1= threading.Thread(target=task1)
+# t1.daemon=True
+# t1.start()
+# print("Task over")
+
+#Thread name
+# import threading
+# def task1():
+#     print("Thread name:",threading.current_thread().name)
+# t1=threading.Thread(target=task1)
+# t1.start()
+# t1.join()
+
+#Mutiple thread
+# import threading
+# def task():
+#     print("Hello!!Joy")
+# for i in range(5):
+#     t=threading.Thread(target=task)
+#     t.start()
+#     t.join()
+
+#thread status
+# import threading
+# import time
+# def task():
+#     time.sleep(5)
+#     print("Task completed")
+# t=threading.Thread(target=task)
+# t.start()
+# print(t.is_alive())
+# t.join()
+# print(t.is_alive())
+
+#Using argument
+# import threading
+# def fun1(name):
+#     print("Student name:",name)
+# t1=threading.Thread(target=fun1,args=("Vimal",))
+# t1.start()
+# t1.join()
